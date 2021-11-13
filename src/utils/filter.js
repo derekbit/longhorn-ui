@@ -26,6 +26,7 @@ export const nodeStatusColorMap = {
   unknown: { color: '#F15354', bg: 'rgba(241,83,84,.05)' },
 }
 export function getNodeStatus(node) {
+  console.log(node)
   const p = [{ key: 'down', name: 'Down', determine: isDown }, { key: 'disabled', name: 'Disabled', determine: isDisabled }, { key: 'unschedulable', name: 'Unschedulable', determine: isUnschedulable }, { key: 'schedulable', name: 'Schedulable', determine: isSchedulable }]
   for (let i = 0; i < p.length; i++) {
     if (p[i].determine(node)) {
