@@ -111,6 +111,14 @@ const modal = ({
               ],
             })(<InputNumber min={1} />)}
           </FormItem>}
+          <FormItem label="Data Engine" hasFeedback {...formItemLayout}>
+          {getFieldDecorator('backendStoreDriver', {
+            initialValue: 'v2',
+          })(<Select>
+            <Option key={'v1'} value={'v1'}>v1</Option>
+            <Option key={'v2'} value={'v2'}>v2</Option>
+          </Select>)}
+        </FormItem>
         <FormItem label="Access Mode" hasFeedback {...formItemLayout}>
           {getFieldDecorator('accessMode', {
             initialValue: item.accessMode,

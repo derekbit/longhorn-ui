@@ -1,6 +1,6 @@
 VERSION = $(shell ./scripts/version)
 
-REPO = longhornio
+REPO = derekbit
 NAME = longhorn-ui
 INSTANCE = default
 LONHORN_MANAGER_IP = http://localhost:9500
